@@ -3,13 +3,10 @@ package com.ashis.textadventure
 import java.io.File
 import java.io.FileNotFoundException
 
-fun readLocationInfo(): Map<Int, Location> {
+fun readLocationInfo(locationsFileName: String, directionsFileName: String): Map<Int, Location> {
     val locations = mutableMapOf<Int, Location>()
-
-    initializeLocations(locations, "locations_big.txt")
-
-    initializeExitDirections(locations, "directions_big.txt")
-
+    initializeLocations(locations, locationsFileName)
+    initializeExitDirections(locations, directionsFileName)
     return locations
 }
 

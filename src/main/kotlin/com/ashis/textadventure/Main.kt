@@ -1,7 +1,7 @@
 package com.ashis.textadventure
 
-fun main(args: Array<String>) {
-    val locations = readLocationInfo()
+fun main() {
+    val locations = readLocationInfo("locations_big.txt", "directions_big.txt")
 
     var loc = 64
 
