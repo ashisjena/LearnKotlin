@@ -1,7 +1,10 @@
 package com.ashis.array
 
 fun main() {
-    val arr = arrayOf("Ram", "Hari", "Shyam");
+    val shortArray1 = shortArrayOf(1, 2, 3, 4)
+    val shortArray2: Array<Short> = arrayOf(1, 3, 5, 6)
+
+    val arr = arrayOf("Ram", "Hari", "Shyam")
 
     /*for (ele in arr) {
         println(ele)
@@ -26,4 +29,9 @@ fun main() {
 
     val anyArr = arrayOf("Ram", 4, 3.5);
     println(anyArr is Array<Any>)
+
+    val nullableInts = arrayOfNulls<Int>(5)
+    nullableInts.forEach(::println)
+
+    val intArray = Array<Int?>(40) { i -> (i + 1) * 5 }
 }
