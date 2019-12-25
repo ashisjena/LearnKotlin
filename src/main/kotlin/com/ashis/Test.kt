@@ -1,4 +1,4 @@
-package com.ashis.demo
+package com.ashis
 
 fun main(args: Array<String>) {
     area(10, 20)
